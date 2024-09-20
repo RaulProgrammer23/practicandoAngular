@@ -1,0 +1,16 @@
+<label>Nombre</label>
+<input type="text" name="nombre" #nombre class="form-control">
+
+<label>DNI</label>
+<input type="text" name="dni" #dni class="form-control">
+
+<label>Fecha Vacuna</label>
+<input type="date" name="fecha_vacuna" #fecha_vacuna class="form-control">
+
+<label>Fecha Sintoma</label>
+<input type="date" name="fecha_sintoma" #fecha_sintoma class="form-control">
+
+<label>Sintomas</label>
+<textarea name="sintomas" #sintomas class="form-control"></textarea>
+
+<button (click)="add(nombre,dni,fecha_vacuna,fecha_sintoma,sintomas)">Enviar</button>
